@@ -5,4 +5,34 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_settings">Settings</string>
+
+
+    <string name="money_value">Тип валюты:</string>
+    <string name="money_value_us">$</string>
+    <string name="money_value_eu">€</string>
+    <string name="money_value_uah">₴</string>
+    <string name="money_value_rub">₽</string>
+
+    <string name="distance_value">Дистанция:</string>
+    <string name="distance_value_km">.км</string>
+    <string name="distance_value_ml">.мл</string>
+
+    <string name="fuel_value">Мера топлива:</string>
+    <string name="fuel_value_lit">.л</string>
+    <string name="fuel_value_gal">.гал</string>
+
+    <string name="theme">Тема:</string>
+    <string name="theme_day">День</string>
+    <string name="theme_night">Ночь</string>
+
+    <string name="app_language">Язык:</string>
+    <string name="app_language_rus">Русский</string>
+    <string name="app_language_eu">English</string>
+
+    <string-array name="Money">
+        <item>$</item>
+        <item>UAH</item>
+        <item>EU</item>
+    </string-array>
+
 </resources>
