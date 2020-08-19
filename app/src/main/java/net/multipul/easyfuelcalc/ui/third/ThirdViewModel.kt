@@ -1,10 +1,10 @@
-package net.multipul.easyfuelcalc.ui.notifications
+package net.multipul.easyfuelcalc.ui.third
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class ThirdViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"

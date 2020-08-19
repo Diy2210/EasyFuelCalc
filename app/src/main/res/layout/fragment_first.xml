@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.first.FirstFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,20 +19,18 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:hint="11111"
+            android:hint="@string/fuel_value"
             app:endIconMode="clear_text"
             app:layout_constraintEnd_toStartOf="@+id/fuelTypeTV"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTop="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/valueFuelType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textUri"
+                android:inputType="number"
                 android:singleLine="true"
-                android:text="@={item.url}"
                 tools:layout_editor_absoluteY="45dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -56,20 +53,18 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:hint="11111"
+            android:hint="@string/distance_value"
             app:endIconMode="clear_text"
             app:layout_constraintEnd_toStartOf="@+id/distanceTypeTV"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-            app:layout_constraintTop_toTop="parent">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/valueDistanceType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textUri"
+                android:inputType="number"
                 android:singleLine="true"
-                android:text="@={item.url}"
                 tools:layout_editor_absoluteY="45dp" />
 
         </com.google.android.material.textfield.TextInputLayout>

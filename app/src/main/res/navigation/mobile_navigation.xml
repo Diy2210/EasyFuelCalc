@@ -3,29 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_first">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="net.multipul.easyfuelcalc.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_first"
+        android:name="net.multipul.easyfuelcalc.ui.first.FirstFragment"
+        android:label="@string/first_screen"
+        tools:layout="@layout/fragment_first" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="net.multipul.easyfuelcalc.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/navigation_second"
+        android:name="net.multipul.easyfuelcalc.ui.second.SecondFragment"
+        android:label="@string/second_screen"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="net.multipul.easyfuelcalc.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_third"
+        android:name="net.multipul.easyfuelcalc.ui.third.ThirdFragment"
+        android:label="@string/fourth_screen"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_fourth"
+        android:name="net.multipul.easyfuelcalc.ui.fourth.FourthFragment"
+        android:label="@string/fourth_screen"
+        tools:layout="@layout/fragment_fourth" />
 
     <fragment
         android:id="@+id/navigation_settings"
         android:name="net.multipul.easyfuelcalc.ui.settings.SettingsFragment"
-        android:label="@string/title_settings"
+        android:label="@string/settings_screen"
         tools:layout="@layout/fragment_settings" />
 </navigation>
