@@ -8,6 +8,12 @@
     <string name="fourth_screen">На сколько хватит топлива</string>
     <string name="settings_screen">Настройки</string>
 
+    <string name="gaz">Залил:</string>
+    <string name="drive">Проехал:</string>
+
+    <string name="result">Рассчитать расход</string>
+    <string name="result_desc">Расход топлива составляет</string>
+
     <string name="money_value">Тип валюты:</string>
     <string name="money_value_us">$</string>
     <string name="money_value_eu">€</string>
@@ -29,11 +35,5 @@
     <string name="app_language">Язык:</string>
     <string name="app_language_rus">Русский</string>
     <string name="app_language_eu">English</string>
-
-    <string-array name="Money">
-        <item>$</item>
-        <item>UAH</item>
-        <item>EU</item>
-    </string-array>
 
 </resources>

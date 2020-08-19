@@ -9,8 +9,8 @@ class FuelCalcHelper {
     var resDistance by Delegates.notNull<Int>()
     var resCostDistance by Delegates.notNull<Int>()
 
-    fun averageFuel(fuel: Int, distance: Int) {
-        resFuel = fuel * 100 / distance
+    fun averageFuel(fuel: Float, distance: Float) {
+        resFuel = (fuel * 100 / distance).toInt()
     }
 
     fun costTravel(fuel: Int, distance: Int, average: Int) {
