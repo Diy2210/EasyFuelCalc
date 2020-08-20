@@ -15,13 +15,13 @@
         android:id="@+id/navigation_second"
         android:name="net.multipul.easyfuelcalc.ui.second.SecondFragment"
         android:label="@string/second_screen"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_second" />
 
     <fragment
         android:id="@+id/navigation_third"
         android:name="net.multipul.easyfuelcalc.ui.third.ThirdFragment"
         android:label="@string/fourth_screen"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_third" />
 
     <fragment
         android:id="@+id/navigation_fourth"

@@ -21,11 +21,11 @@ class SecondFragment : Fragment() {
     ): View? {
         secondViewModel =
             ViewModelProviders.of(this).get(SecondViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        secondViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+        val root = inflater.inflate(R.layout.fragment_second, container, false)
+//        val textView: TextView = root.findViewById(R.id.text_dashboard)
+//        secondViewModel.text.observe(viewLifecycleOwner, Observer {
+//            textView.text = it
+//        })
         return root
     }
 }
