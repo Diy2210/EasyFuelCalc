@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_first.view.*
 import net.multipul.easyfuelcalc.FuelCalcHelper
 import net.multipul.easyfuelcalc.R
-import net.multipul.easyfuelcalc.model.BaseModel
+import net.multipul.easyfuelcalc.model.FirstModel
 
 class FirstFragment : Fragment() {
 
@@ -30,13 +30,13 @@ class FirstFragment : Fragment() {
             val fuel = valueFuelType.text.toString()
             val distance = valueDistanceType.text.toString()
 
-            val v = BaseModel(fuel.toFloat(), distance.toFloat())
+            val v = FirstModel(fuel.toFloat(), distance.toFloat())
 
             if (fuel.isEmpty() || distance.isEmpty()) {
                 Toast.makeText(requireContext(), "Empty fields!", Toast.LENGTH_LONG).show()
             } else {
                 fuelCalcHelper.averageFuel(v.fuel, v.distance)
-                resTV.text = (getString(R.string.result_desc) + " " + fuelCalcHelper.result + " литров на 100 км.")
+                resTV.text = (getString(R.string.result_average_desc) + " " + fuelCalcHelper.result + " литров на 100 км.")
             }
         }
         return root

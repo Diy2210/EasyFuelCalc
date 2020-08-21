@@ -11,8 +11,16 @@
     <string name="gaz">Залил:</string>
     <string name="drive">Проехал:</string>
 
-    <string name="result">Рассчитать расход</string>
-    <string name="result_desc">Расход топлива составляет</string>
+    <string name="average">Средний расход:</string>
+
+    <string name="result">Рассчитать</string>
+    <string name="result_average_desc">Расход топлива составляет</string>
+
+    <string name="result_cost_travel_fuel_desc">Необходимое количество топлива</string>
+    <string name="result_cost_travel_cost_desc">Стоимость поездки</string>
+
+    <string name="cost_fuel">Стоимость топлива:</string>
+    <string name="distance">Расстояние:</string>
 
     <string name="money_value">Тип валюты:</string>
     <string name="money_value_us">$</string>

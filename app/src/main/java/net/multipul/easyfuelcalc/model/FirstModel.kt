@@ -1,6 +1,6 @@
 package net.multipul.easyfuelcalc.model
 
-data class BaseModel (
+data class FirstModel (
     val fuel: Float,
-    val distance: Float
+    val distance: Float,
 )
