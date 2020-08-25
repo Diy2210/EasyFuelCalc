@@ -43,7 +43,6 @@ class SecondFragment : Fragment() {
                 resCostTV.text = (getString(R.string.result_cost_travel_cost_desc) + " " + fuelCalcHelper.res + " .грн")
             }
         }
-
         return root
     }
 }
