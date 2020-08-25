@@ -19,11 +19,9 @@ class FuelCalcHelper {
     }
 
     fun costTravel(distance: Float, average: Float, cost: Float) {
-//        needFuel = average * 100 / distance
         needFuel = distance / 100 * average
         result = "%.2f".format(needFuel)
 
-//        resCostTravel = cost * distance / average
         resCostTravel = cost * needFuel
         res = "%.2f".format(resCostTravel)
     }

@@ -5,7 +5,7 @@
     <string name="first_screen">Средний расход</string>
     <string name="second_screen">Стоимость поездки</string>
     <string name="third_screen">На сколько хватит топлива</string>
-    <string name="fourth_screen">На сколько хватит топлива</string>
+    <string name="fourth_screen">Стоимость 1 км.</string>
     <string name="settings_screen">Настройки</string>
 
     <string name="gaz">Залил:</string>
@@ -18,6 +18,8 @@
 
     <string name="result_cost_travel_fuel_desc">Необходимое количество топлива</string>
     <string name="result_cost_travel_cost_desc">Стоимость поездки</string>
+
+    <string name="result_fuel_to_dist_desc">Вы сможете проехать</string>
 
     <string name="cost_fuel">Стоимость топлива:</string>
     <string name="distance">Расстояние:</string>
@@ -34,6 +36,7 @@
 
     <string name="fuel_value">Мера топлива:</string>
     <string name="fuel_value_lit">.л</string>
+    <string name="fuel_value_lit_km">.л/100 км.</string>
     <string name="fuel_value_gal">.гал</string>
 
     <string name="theme">Тема:</string>

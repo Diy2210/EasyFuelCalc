@@ -29,6 +29,7 @@
                 android:id="@+id/valueDist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:singleLine="true"
                 tools:layout_editor_absoluteY="45dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -60,6 +61,7 @@
                 android:id="@+id/valueAverage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:singleLine="true"
                 tools:layout_editor_absoluteY="45dp" />
         </com.google.android.material.textfield.TextInputLayout>

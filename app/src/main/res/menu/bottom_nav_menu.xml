@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/navigation_first"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_car"
         android:title="@string/first_screen" />
 
     <item
         android:id="@+id/navigation_second"
-        android:icon="@drawable/ic_dashboard"
+        android:icon="@drawable/ic_car"
         android:title="@string/second_screen" />
 
     <item
         android:id="@+id/navigation_third"
-        android:icon="@drawable/ic_notifications"
+        android:icon="@drawable/ic_car"
         android:title="@string/third_screen" />
 
     <item
         android:id="@+id/navigation_fourth"
-        android:icon="@drawable/ic_notifications"
+        android:icon="@drawable/ic_car"
         android:title="@string/fourth_screen" />
 
     <item
