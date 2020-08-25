@@ -21,6 +21,8 @@
 
     <string name="result_fuel_to_dist_desc">Вы сможете проехать</string>
 
+    <string name="result_cost_to_dist_desc">Стоимость 1 км. составляет</string>
+
     <string name="cost_fuel">Стоимость топлива:</string>
     <string name="distance">Расстояние:</string>
 
