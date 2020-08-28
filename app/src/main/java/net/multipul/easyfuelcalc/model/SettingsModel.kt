@@ -5,5 +5,6 @@ data class SettingsModel (
 //    val distance: Int,
 //    val fuel: Int,
 //    val money: Int,
-    val theme: Int
+//    val theme: Boolean
+    val theme: String
 )

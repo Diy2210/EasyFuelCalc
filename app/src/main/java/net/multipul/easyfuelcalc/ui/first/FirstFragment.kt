@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_first.view.*
-import net.multipul.easyfuelcalc.FuelCalcHelper
+import net.multipul.easyfuelcalc.helper.FuelCalcHelper
 import net.multipul.easyfuelcalc.R
 import net.multipul.easyfuelcalc.model.FirstModel
 

@@ -1,14 +1,14 @@
-package net.multipul.easyfuelcalc
+package net.multipul.easyfuelcalc.helper
 
 import kotlin.properties.Delegates
 
 class FuelCalcHelper {
 
-    var resFuel by Delegates.notNull<Float>()
-    var resCostTravel by Delegates.notNull<Float>()
-    var needFuel by Delegates.notNull<Float>()
-    var resDistance by Delegates.notNull<Float>()
-    var resCostDistance by Delegates.notNull<Float>()
+    private var resFuel by Delegates.notNull<Float>()
+    private var resCostTravel by Delegates.notNull<Float>()
+    private var needFuel by Delegates.notNull<Float>()
+    private var resDistance by Delegates.notNull<Float>()
+    private var resCostDistance by Delegates.notNull<Float>()
 
     lateinit var result: String
     lateinit var res: String

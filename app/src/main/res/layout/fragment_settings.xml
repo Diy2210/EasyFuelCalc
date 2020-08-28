@@ -7,6 +7,10 @@
     android:id="@+id/settings_view"
     tools:context=".ui.settings.SettingsFragment">
 
+<!--    <data>-->
+<!--        <variable android:name="item" android:type="net.multipul.easyfuelcalc.model.SettingsModel"/>-->
+<!--    </data>-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/langCL"
         android:layout_width="0dp"
@@ -44,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
+                android:enabled="false"
                 android:text="@string/app_language_eu" />
 
             <RadioButton
@@ -94,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
-                android:text="@string/distance_value_ml" />
+                android:text="@string/distance_value_ml"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/radio_km"
@@ -144,7 +150,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
-                android:text="@string/fuel_value_gal" />
+                android:text="@string/fuel_value_gal"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/radio_lit"
@@ -177,12 +184,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
+            android:id="@+id/radioTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:checkedButton="@id/radio_day"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -246,7 +253,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
-                android:text="@string/money_value_us" />
+                android:text="@string/money_value_us"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/radio_eu"
@@ -254,7 +262,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
-                android:text="@string/money_value_eu" />
+                android:text="@string/money_value_eu"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/radio_rus"
@@ -262,7 +271,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
-                android:text="@string/money_value_rub" />
+                android:text="@string/money_value_rub"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/radio_uah"

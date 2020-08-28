@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/navigation_first"
-        android:icon="@drawable/ic_car"
+        android:icon="@drawable/ic_car5"
         android:title="@string/first_screen" />
 
     <item
         android:id="@+id/navigation_second"
-        android:icon="@drawable/ic_car"
+        android:icon="@drawable/ic_car3"
         android:title="@string/second_screen" />
 
     <item
         android:id="@+id/navigation_third"
-        android:icon="@drawable/ic_car"
+        android:icon="@drawable/ic_car4"
         android:title="@string/third_screen" />
 
     <item

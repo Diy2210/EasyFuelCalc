@@ -4,19 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_first.resTV
-import kotlinx.android.synthetic.main.fragment_first.valueFuelType
 import kotlinx.android.synthetic.main.fragment_first.view.*
 import kotlinx.android.synthetic.main.fragment_third.*
-import net.multipul.easyfuelcalc.FuelCalcHelper
+import net.multipul.easyfuelcalc.helper.FuelCalcHelper
 import net.multipul.easyfuelcalc.R
-import net.multipul.easyfuelcalc.model.FirstModel
 import net.multipul.easyfuelcalc.model.ThirdModel
 
 class ThirdFragment : Fragment() {
