@@ -1,5 +1,6 @@
 package net.multipul.easyfuelcalc.ui.fourth
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,6 +20,7 @@ class FourthFragment : Fragment() {
     private lateinit var fourthViewModel: FourthViewModel
     private var fuelCalcHelper: FuelCalcHelper = FuelCalcHelper()
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -37,7 +39,11 @@ class FourthFragment : Fragment() {
                 Toast.makeText(requireContext(), "Empty fields!", Toast.LENGTH_LONG).show()
             } else {
                 fuelCalcHelper.costDistance(v.average, v.cost)
-                resTV.text = (getString(R.string.result_cost_to_dist_desc) + " " + fuelCalcHelper.result + " " + getString(R.string.money_value_uah))
+//                resTV.text = (getString(R.string.result_cost_to_dist_desc) + " " + fuelCalcHelper.result + " " + getString(R.string.money_value_uah))
+
+                fuelCalcHelper.r.observe(viewLifecycleOwner,
+                    { t -> resTV.text = getString(R.string.result_cost_to_dist_desc) + " " + t!!.toString() + getString(R.string.money_value_uah) })
+
             }
         }
 

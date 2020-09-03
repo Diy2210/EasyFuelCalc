@@ -10,4 +10,7 @@ class SettingsViewModel: ViewModel() {
         value = "This is settings Fragment"
     }
     val text: LiveData<String> = _text
+
+    private val _checked = MutableLiveData<Boolean>()
+    val checked : LiveData<Boolean> = _checked
 }

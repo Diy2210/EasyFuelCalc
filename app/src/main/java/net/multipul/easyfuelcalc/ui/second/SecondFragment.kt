@@ -1,5 +1,6 @@
 package net.multipul.easyfuelcalc.ui.second
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_first.view.*
 import kotlinx.android.synthetic.main.fragment_second.*
 import net.multipul.easyfuelcalc.helper.FuelCalcHelper
@@ -18,6 +20,7 @@ class SecondFragment : Fragment() {
     private lateinit var secondViewModel: SecondViewModel
     private var fuelCalcHelper: FuelCalcHelper = FuelCalcHelper()
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -38,8 +41,14 @@ class SecondFragment : Fragment() {
                 Toast.makeText(requireContext(), "Empty fields!", Toast.LENGTH_LONG).show()
             } else {
                 fuelCalcHelper.costTravel(v.distance, v.average, v.cost)
-                resFuelTV.text = (getString(R.string.result_cost_travel_fuel_desc) + " " + fuelCalcHelper.result + " литров")
-                resCostTV.text = (getString(R.string.result_cost_travel_cost_desc) + " " + fuelCalcHelper.res + " .грн")
+//                resFuelTV.text = (getString(R.string.result_cost_travel_fuel_desc) + " " + fuelCalcHelper.result + " литров")
+//                resCostTV.text = (getString(R.string.result_cost_travel_cost_desc) + " " + fuelCalcHelper.res + " .грн")
+
+                fuelCalcHelper.r.observe(viewLifecycleOwner,
+                    { t -> resFuelTV.text = getString(R.string.result_cost_travel_fuel_desc) + " " + t!!.toString() + " литров" })
+
+                fuelCalcHelper.rr.observe(viewLifecycleOwner,
+                    { t -> resCostTV.text = getString(R.string.result_cost_travel_cost_desc) + " " + t!!.toString() + " .грн" })
             }
         }
         return root

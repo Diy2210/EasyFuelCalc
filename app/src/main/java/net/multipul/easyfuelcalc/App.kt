@@ -4,9 +4,10 @@ import android.app.Application
 
 class App : Application() {
 
-    var theme: String = ""
+    lateinit var theme: String
 
     override fun onCreate() {
         super.onCreate()
+        theme = "radio_day"
     }
 }

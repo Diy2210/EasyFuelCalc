@@ -1,11 +1,13 @@
 package net.multipul.easyfuelcalc.ui.first
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_first.view.*
@@ -18,6 +20,7 @@ class FirstFragment : Fragment() {
     private lateinit var homeViewModel: FirstViewModel
     private var fuelCalcHelper: FuelCalcHelper = FuelCalcHelper()
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -36,7 +39,10 @@ class FirstFragment : Fragment() {
                 Toast.makeText(requireContext(), "Empty fields!", Toast.LENGTH_LONG).show()
             } else {
                 fuelCalcHelper.averageFuel(v.fuel, v.distance)
-                resTV.text = (getString(R.string.result_average_desc) + " " + fuelCalcHelper.result + " литров на 100 км.")
+//                resTV.text = (getString(R.string.result_average_desc) + " " + fuelCalcHelper.result + " литров на 100 км.")
+
+                fuelCalcHelper.r.observe(viewLifecycleOwner,
+                    { t -> resTV.text = getString(R.string.result_average_desc) + " " + t!!.toString() + " литров на 100 км." })
             }
         }
         return root
